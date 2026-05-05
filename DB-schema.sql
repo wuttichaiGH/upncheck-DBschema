@@ -13,7 +13,7 @@ CREATE TABLE tb_config (
 -- tb_users
 -- ==============================
 CREATE TABLE tb_users (
-  user_id int NOT NULL AUTO_INCREMENT,
+  user_id int NOT NULL,
   username varchar(100) NOT NULL,
   email varchar(255) NOT NULL,
   password varchar(255) NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE tb_users (
 -- tb_problems (อัพเดท: เพิ่ม category, created_by, source_type)
 -- ==============================
 CREATE TABLE tb_problems (
-  problem_id int NOT NULL AUTO_INCREMENT,
+  problem_id int NOT NULL,
   title varchar(255) NOT NULL,
   description text NOT NULL,
   pdf_path varchar(255) NOT NULL DEFAULT '',
